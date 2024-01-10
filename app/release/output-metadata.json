@@ -1,0 +1,20 @@
+{
+  "version": 4,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.example.spave",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 4,
+      "versionName": "4.0",
+      "outputFile": "app-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

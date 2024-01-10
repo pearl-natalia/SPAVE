@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.68" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62" />
+
+    <ImageView
+        android:id="@+id/A"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/logo1"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/X2"
+        app:layout_constraintLeft_toLeftOf="@id/Y1"
+        app:layout_constraintRight_toRightOf="@id/Y2"
+        app:layout_constraintTop_toTopOf="@id/X1" />
+
+    <ImageView
+        android:id="@+id/V"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/logo2"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/X2"
+        app:layout_constraintLeft_toLeftOf="@id/Y4"
+        app:layout_constraintRight_toRightOf="@id/Y3"
+        app:layout_constraintTop_toTopOf="@id/X1" />
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="center"
+        android:text="  S  P  Ʌ  V  E  "
+        android:textAllCaps="false"
+        android:textColor="#737171"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/X4"
+        app:layout_constraintLeft_toLeftOf="@id/Y1"
+        app:layout_constraintRight_toRightOf="@id/Y3"
+        app:layout_constraintTop_toTopOf="@id/X3" />
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="center"
+        android:text="S  p  e  n  d    +    S  a  v  e"
+        android:textAllCaps="false"
+        android:textColor="#C7C8C8"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/X5"
+        app:layout_constraintLeft_toLeftOf="@id/Y1"
+        app:layout_constraintRight_toRightOf="@id/Y3"
+        app:layout_constraintTop_toTopOf="@id/X4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

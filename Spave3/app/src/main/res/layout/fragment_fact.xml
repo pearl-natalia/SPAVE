@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FactFragment"
+    android:background="@drawable/home_background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2979FF"
+        app:layout_constraintBottom_toBottomOf="@id/X1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topBar"
+        android:elevation="2dp"/>
+
+    <ImageView
+        android:id="@+id/whiteFade"
+        android:layout_width="0dp"
+        android:elevation="1dp"
+        android:layout_height="0dp"
+        android:background="#3BFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/X1" />
+
+    <ImageView
+        android:id="@+id/whiteFade2"
+        android:layout_width="0dp"
+        android:elevation="2dp"
+        android:layout_height="0dp"
+        android:background="@drawable/fact_background"
+        app:layout_constraintBottom_toBottomOf="@id/X5"
+        app:layout_constraintLeft_toLeftOf="@id/arrowEnd"
+        app:layout_constraintRight_toRightOf="@id/Y5"
+        app:layout_constraintTop_toTopOf="@id/X4" />
+
+    <ImageView
+        android:id="@+id/lightBulb"
+        android:layout_width="0dp"
+        android:elevation="3dp"
+        android:layout_height="0dp"
+        android:src="@drawable/fact"
+        app:layout_constraintBottom_toBottomOf="@id/X5"
+        app:layout_constraintLeft_toLeftOf="@id/Y6"
+        app:layout_constraintRight_toRightOf="@id/Y2"
+        app:layout_constraintTop_toTopOf="@id/X4" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/back"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@id/arrowBottom"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="@id/arrowStart"
+        app:layout_constraintRight_toRightOf="@id/arrowEnd"
+        app:layout_constraintTop_toTopOf="@id/arrowTop" />
+
+    <TextView
+        android:id="@+id/tip_calculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="left|center_vertical"
+        android:text="Random Money Facts"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/arrowBottom"
+        app:layout_constraintLeft_toLeftOf="@id/arrowEnd"
+        app:layout_constraintRight_toRightOf="@id/Y2"
+        app:layout_constraintTop_toTopOf="@id/arrowTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.015" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="-0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.045" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.015" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.72" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.82" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.69" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/X8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"/>
+
+    <TextView
+        android:id="@+id/factView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="left|center_vertical"
+        android:singleLine="false"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintBottom_toBottomOf="@id/X2"
+        app:layout_constraintLeft_toLeftOf="@id/Y3"
+        app:layout_constraintRight_toRightOf="@id/Y4"
+        app:layout_constraintTop_toTopOf="@id/X6" />
+
+    <Button
+        android:id="@+id/new_fact_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calculate_button_background"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:gravity="center"
+        android:text="New Fact"
+        android:backgroundTint="#737171"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/X3"
+        app:layout_constraintLeft_toLeftOf="@id/Y3"
+        app:layout_constraintRight_toRightOf="@id/Y4"
+        app:layout_constraintTop_toTopOf="@id/X2" />
+
+    <Button
+        android:id="@+id/copy_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/copy"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/X8"
+        app:layout_constraintLeft_toLeftOf="@id/Y2"
+        app:layout_constraintRight_toRightOf="@id/Y7"
+        app:layout_constraintTop_toTopOf="@id/X7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

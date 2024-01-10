@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120.0"
+    android:viewportHeight="120.0">
+
+    <path
+        android:name="play_triangle"
+        android:pathData="M 30 30 L 30 90 L 80 60 z"
+        android:strokeWidth="10"
+        android:strokeColor="@color/gradient"/>
+
+</vector>

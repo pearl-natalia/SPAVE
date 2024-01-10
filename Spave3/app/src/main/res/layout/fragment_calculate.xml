@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    android:orientation="vertical"
+    tools:context=".CalculateFragment">
+
+    <TextView
+        android:id="@+id/tip_calculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="left|center_vertical"
+        android:text="Shopping Calculator"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/arrowBottom"
+        app:layout_constraintLeft_toLeftOf="@id/Y1"
+        app:layout_constraintRight_toRightOf="@id/Y2"
+        app:layout_constraintTop_toTopOf="@id/arrowTop" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2979FF"
+        app:layout_constraintBottom_toBottomOf="@id/bottomBar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topBar" />
+
+    <Button
+        android:id="@+id/tip_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calculate_top_left"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/endY1"
+        app:layout_constraintLeft_toLeftOf="@id/startX1"
+        app:layout_constraintRight_toRightOf="@id/endX1"
+        app:layout_constraintTop_toTopOf="@id/startY1" />
+
+    <Button
+        android:id="@+id/discount_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calculate_top_right"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/endY1"
+        app:layout_constraintLeft_toLeftOf="@id/startX2"
+        app:layout_constraintRight_toRightOf="@id/endX2"
+        app:layout_constraintTop_toTopOf="@id/startY1" />
+
+    <Button
+        android:id="@+id/unit_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calculate_botton_left"
+        app:layout_constraintBottom_toBottomOf="@+id/endY2"
+        app:layout_constraintLeft_toLeftOf="@id/startX1"
+        app:layout_constraintRight_toRightOf="@id/endX1"
+        app:layout_constraintTop_toTopOf="@+id/startY2" />
+
+    <Button
+        android:id="@+id/currency_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/calculate_bottom_right"
+        app:layout_constraintBottom_toBottomOf="@id/endY2"
+        app:layout_constraintLeft_toLeftOf="@id/startX2"
+        app:layout_constraintRight_toRightOf="@id/endX2"
+        app:layout_constraintTop_toTopOf="@id/startY2" />
+
+
+    <TextView
+        android:id="@+id/text_discount"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="Discount"
+        android:fontFamily="@font/sintony"
+        android:textAllCaps="false"
+        android:textColor="#6B6D70"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/textBottom1"
+        app:layout_constraintLeft_toLeftOf="@id/startX2"
+        app:layout_constraintRight_toRightOf="@id/endX2"
+        app:layout_constraintTop_toTopOf="@id/symbolY2" />
+
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/sintony"
+        android:gravity="center"
+        android:text="Tip"
+        android:textAllCaps="false"
+        android:textColor="#6B6D70"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/textBottom1"
+        app:layout_constraintLeft_toLeftOf="@id/startX1"
+        app:layout_constraintRight_toRightOf="@id/endX1"
+        app:layout_constraintTop_toTopOf="@id/symbolY2" />
+
+    <TextView
+        android:id="@+id/text_tax"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:text="Unit Price"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sintony"
+        android:textColor="#6B6D70"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/textBottom2"
+        app:layout_constraintLeft_toLeftOf="@id/startX1"
+        app:layout_constraintRight_toRightOf="@id/endX1"
+        app:layout_constraintTop_toTopOf="@id/symbolY3" />
+
+    <TextView
+        android:id="@+id/text_interest"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:fontFamily="@font/sintony"
+        android:text="Currency"
+        android:textAllCaps="false"
+        android:textColor="#6B6D70"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/textBottom2"
+        app:layout_constraintLeft_toLeftOf="@id/startX2"
+        app:layout_constraintRight_toRightOf="@id/endX2"
+        app:layout_constraintTop_toTopOf="@id/symbolY3" />
+
+    <ImageView
+        android:id="@+id/tipSymbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:src="@drawable/money"
+        app:layout_constraintBottom_toBottomOf="@+id/symbolY2"
+        app:layout_constraintLeft_toLeftOf="@id/symbolX1"
+        app:layout_constraintRight_toRightOf="@id/symbolX2"
+        app:layout_constraintTop_toTopOf="@id/symbolY1"
+        app:tint="#41C7F8" />
+
+    <ImageView
+        android:id="@+id/discountSymbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:src="@drawable/percent"
+        app:layout_constraintBottom_toBottomOf="@+id/symbolY2"
+        app:layout_constraintLeft_toLeftOf="@id/symbolX3"
+        app:layout_constraintRight_toRightOf="@id/symbolX4"
+        app:layout_constraintTop_toTopOf="@+id/symbolY1"
+        app:tint="#41C7F8" />
+
+    <ImageView
+        android:id="@+id/taxSymbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:src="@drawable/convert"
+        app:layout_constraintBottom_toBottomOf="@+id/symbolY3"
+        app:layout_constraintLeft_toLeftOf="@id/symbolX1"
+        app:layout_constraintRight_toRightOf="@id/symbolX2"
+        app:layout_constraintTop_toTopOf="@+id/symbolY4"
+        app:tint="#41C7F8" />
+
+    <ImageView
+        android:id="@+id/interestSymbol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="2dp"
+        android:src="@drawable/currency_exchange"
+        app:layout_constraintBottom_toBottomOf="@+id/symbolY3"
+        app:layout_constraintLeft_toLeftOf="@id/symbolX3"
+        app:layout_constraintRight_toRightOf="@id/symbolX4"
+        app:layout_constraintTop_toTopOf="@+id/symbolY4"
+        app:tint="#41C7F8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.53" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolX1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolX2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolX3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolX4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.23" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolY1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.42" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolY4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/symbolY3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.74" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textBottom1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/textBottom2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="-0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/Y2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.045" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/arrowTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.015" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--#2DE7D8-->
+
