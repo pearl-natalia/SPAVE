@@ -7,7 +7,7 @@ With built-in features like a tip calculator and a section showcasing the most r
 
 ## Features
 
-- **Tip Calculator:** Calculates tips based on dining expenses, with the ability to add custom tip % and split bills with friends.
+- **Tip Calculator:** Calculates tips based on dining expenses, with the ability to add a custom tip and split the bill.
   
 - **Unit Price Converter:** Compares product prices by converting different units to get the best value for your money.
 
