@@ -9,7 +9,7 @@ With built-in features like a tip calculator and a section showcasing the most r
 
 - **Tip Calculator:** Calculates tips based on dining expenses, with the ability to add a custom tip and split the bill.
   
-- **Unit Price Converter:** Compares product prices by converting different units to get the best value for your money.
+- **Unit Price Converter:** Compares prices of products by weight/mass to get the best value for your money.
 
 - **Discount Calculator:** Calculates discounts and final prices to optimize savings.
 
