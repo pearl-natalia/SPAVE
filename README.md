@@ -9,14 +9,14 @@ With built-in features like a tip calculator and a section showcasing the most r
 
 - **Tip Calculator:** Calculates tips based on dining expenses, with the ability to add custom tip % and split bills with friends.
   
-- **Unit Price Converter:** Compares prices of products by converting different units to get the best value for your money.
+- **Unit Price Converter:** Compares product prices by converting different units to get the best value for your money.
 
-- **Discount Calculator:** Calculates discounts and final prices to ensure you're getting the most savings possible.
+- **Discount Calculator:** Calculates discounts and final prices to optimize savings.
 
-- **Real-Time Coupon Page:** Gives you access to the latest coupons and discounts, that can be redeemed during checkout.
+- **Real-Time Coupon Page:** Fetches the latest coupons and discounts that can be redeemed during checkout.
   
-- **Random Fact Generator:** Generates interesting and surprising facts about money to enhance your financial knowledge.
+- **Random Fact Generator:** Generates interesting facts about money to enhance your financial knowledge.
 
 - **Notes Page:** Helps you stay organized with a place to jot down an expense log, shopping list, etc.
   
-- **Recent Sales:**: Informs you on the latest sales and promotions to save money on your favourite products
+- **Recent Sales:**: Informs you on the latest sales and promotions to save money on your favourite products.
