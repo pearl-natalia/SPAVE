@@ -4,7 +4,7 @@ Spave is an all-in-one Android budgeting app designed to help users optimize the
 With built-in features like a tip calculator and a section showcasing the most recent sales, Spave is designed to budget user spending.
 
 <p align="center">
-  <img width="75%" alt="Screenshot 2024-01-21 at 9 03 17 PM" src="https://github.com/pearl-natalia/Spave/assets/145855287/b90fa00d-e81c-4ca9-9f62-1a5af45bb1a3">
+  <img width="100%" alt="Screenshot 2024-01-21 at 9 03 17 PM" src="https://github.com/pearl-natalia/Spave/assets/145855287/b90fa00d-e81c-4ca9-9f62-1a5af45bb1a3">
 </p>
 
 ## Features
