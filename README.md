@@ -1,4 +1,4 @@
-# SPAVE (Budgeting App)
+# SPΛVE (Budgeting App)
 
 Spave is an all-in-one Android budgeting app designed to help users optimize their savings when spending money. 
 With built-in features like a tip calculator and a section showcasing the most recent sales, Spave is designed to budget user spending.
